@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-message" style="display: none;">Welcome!</div> <!-- Display welcome message -->
+        <img id="user-image" src="#" alt="User Image" style="width: 100px; height: auto; display: none;"> <!-- User image display -->
+
+        <div class="form-container" id="login-form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-register-form">Register</a></p>
+        </div>
+
+        <div class="form-container" id="register-form-container" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form" enctype="multipart/form-data">
+                <input type="text" id="register-name" name="name" required placeholder="Full Name">
+                <input type="text" id="register-username" name="username" required placeholder="Username">
+                <input type="password" id="register-password" name="password" required placeholder="Password">
+                <input type="file" id="register-image" name="image" required> <!-- Image upload input -->
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login-form">Login</a></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

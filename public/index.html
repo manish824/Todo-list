@@ -10,6 +10,10 @@
     <div class="container">
         <header>
             <h1>To-Do List</h1>
+            <button id="logout-button" style="float: right; margin-right: 20px;">Logout</button>
+            <h1>Image here</h1>
+            <img id="user-image" src="#" alt="User Image" style="width: 100px; height: auto; display: none;">
+            <div id="welcome-message"></div>
         </header>
         <main>
             <section id="task-form">
@@ -34,9 +38,35 @@
                     <button type="submit">Get Data</button>
                 </form>
                 <div id="user-data">
-                    <h2>FUll Name is</h2>
                     <!-- User data will be displayed here -->
                 </div>
+            </section>
+        </main>
+        <main>
+            <section id="delete-data-form">
+                <h2>Delete User Data</h2>
+                <form id="delete-task-form">
+                    <label for="delete-user-name">Your Name:</label>
+                    <input type="text" id="delete-user-name" name="name"> 
+                    <button type="submit">Delete Data</button>
+                </form>
+                <div id="delete-data">
+                    <!-- User data will be displayed here -->
+                </div>
+            </section>
+        </main>
+        <main>
+            <section id="update-data-form">
+                <h2>Update Task</h2>
+                <form id="update-task-form">
+                    <label for="update-user-name">Your Name:</label>
+                    <input type="text" id="update-user-name" name="name"> 
+                    <label for="update-task-title">Title:</label>
+                    <input type="text" id="update-task-title" name="title" required>
+                    <label for="update-task-description">Description:</label>
+                    <textarea id="update-task-description" name="description" required></textarea>
+                    <button type="submit">Update Task</button>
+                </form>
             </section>
         </main>
     </div>
